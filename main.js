@@ -11,7 +11,7 @@ iniciarContador();
 function eventListeners() {
   form.addEventListener("submit", addNote);
   document.addEventListener("DOMContentLoaded", () => {
-    notes = JSON.parse(localStorage.getItem("notes") || []);
+    notes = JSON.parse(localStorage.getItem("notes")) || [];
 
     createHTML();
   });
